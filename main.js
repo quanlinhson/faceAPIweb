@@ -1,10 +1,11 @@
-const video = document.getElementById("video")
+const video = document.getElementById('video')
+const model = "https://raw.githubusercontent.com/justadudewhohacks/face-api.js/master/weights"
 
 Promise.all([
-  faceapi.nets.tinyFaceDetector.loadFromUri('/models'),
-  faceapi.nets.faceLandmark68Net.loadFromUri('/models'),
-  faceapi.nets.faceRecognitionNet.loadFromUri('/models'),
-  faceapi.nets.faceExpressionNet.loadFromUri('/models')
+  faceapi.nets.tinyFaceDetector.loadFromUri(model),
+  faceapi.nets.faceLandmark68Net.loadFromUri(model),
+  faceapi.nets.faceRecognitionNet.loadFromUri(model),
+  faceapi.nets.faceExpressionNet.loadFromUri(model)
 ]).then(startVideo)
 
 function startVideo() {
