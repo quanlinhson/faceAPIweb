@@ -29,7 +29,7 @@ function screenResize(isScreenSmall) {
 }
 
 screenResize(isScreenSmall);
-isScreenSmall.addListener(screenResize);
+isScreenSmall.addEventListener("change", screenResize);
 
 /****Event Listeiner for the video****/
 video.addEventListener("playing", () => {
