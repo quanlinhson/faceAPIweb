@@ -14,7 +14,7 @@ function startVideo() {
     err => console.error(err)
   )
 }
-/*
+
 video.addEventListener('playing', () => {
   const canvas = faceapi.createCanvasFromMedia(video)
   document.body.append(canvas)
@@ -29,4 +29,3 @@ video.addEventListener('playing', () => {
     faceapi.draw.drawFaceExpressions(canvas, resizedDetections)
   }, 100)
 })
-*/
